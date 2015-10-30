@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:baselineAligned="false"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/week_frag_today_max_break_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/week_frag_today_min_break_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingRight="12dp"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal">
+
+                    <ImageView
+                        android:id="@+id/week_frag_today_swell_direction_imageview"
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:scaleType="fitXY"
+                        android:contentDescription="@string/wave_arrow_description"/>
+
+                    <TextView
+                        android:id="@+id/week_frag_today_swell_compass_direction_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/week_frag_today_swell_period_textview"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical|right"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/week_frag_today_wind_direction_imageview"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:scaleType="fitXY"
+                android:contentDescription="@string/wind_arrow_description"/>
+
+            <TextView
+                android:id="@+id/week_frag_today_wind_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/week_frag_today_wind_gusts_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/week_frag_today_time_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center">
+
+            <RatingBar
+                android:id="@+id/week_frag_today_rating_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/ratingBarStyleSmall"
+                android:clickable="false"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:stepSize="1"
+                android:layout_gravity="center" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

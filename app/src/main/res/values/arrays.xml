@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Display Units Settings-->
+    <string-array name="pref_units_list_titles">
+        <item>UK (ft, mph, c)</item>
+        <item>US (ft, mph, f)</item>
+        <item>EU (m, kph, c)</item>
+    </string-array>
+
+    <string-array name="pref_units_list_values">
+        <item>uk</item>
+        <item>us</item>
+        <item>eu</item>
+    </string-array>
+
+
+    <!-- LocationSettings -->
+    <string-array name="pref_location_titles">
+        <item>Achill Island</item>
+        <item>Bundoran - The Peak</item>
+        <item>Lahinch - Beach</item>
+    </string-array>
+
+    <string-array name="pref_location_values">
+        <item>685</item>
+        <item>50</item>
+        <item>52</item>
+    </string-array>
+
+</resources>

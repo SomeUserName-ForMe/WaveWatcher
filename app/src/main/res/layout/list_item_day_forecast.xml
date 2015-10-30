@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:weightSum="2">
+
+    <TextView
+        android:id="@+id/day_frag_list_item_time"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center" />
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <RatingBar
+            android:id="@+id/day_frag_list_item_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_gravity="center"
+            android:clickable="false"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:stepSize="1"/>
+    </FrameLayout>
+
+</LinearLayout>

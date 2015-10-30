@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/single_fragment_container"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".SingleForecastFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/single_forecast_waves_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/activity_vertical_margin">
+
+            <TextView
+                android:id="@+id/single_forecast_waves_heading_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Waves"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/activity_vertical_margin">
+
+                <ImageView
+                    android:id="@+id/single_forecast_waves_direction_imageview"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/swell_arrow_048"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:id="@+id/single_forecast_waves_compass_direction_textview"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="NNW"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/single_forecast_waves_max_break_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Max Break: 3.4m"/>
+            <TextView
+                android:id="@+id/single_forecast_waves_min_break_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Min Break: 1.1m"/>
+            <TextView
+                android:id="@+id/single_forecast_waves_average_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Average: 1.6m"/>
+            <TextView
+                android:id="@+id/single_forecast_waves_period_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Period: 12"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/single_forecast_wind_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/activity_vertical_margin">
+
+            <TextView
+                android:id="@+id/single_forecast_wind_heading_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wind"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/activity_vertical_margin">
+
+                <ImageView
+                    android:id="@+id/single_forecast_wind_direction_imageview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/wind_arrow_000"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:id="@+id/single_forecast_wind_compass_direction_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SSE"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/single_forecast_wind_speed_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Speed: 50kph"/>
+
+            <TextView
+                android:id="@+id/single_forecast_wind_gusts_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gusts: 80kph"/>
+
+            <TextView
+                android:id="@+id/single_forecast_wind_chill_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3^"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/single_forecast_weather_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/activity_vertical_margin">
+
+            <TextView
+                android:id="@+id/single_forecast_weather_heading_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weather"/>
+
+            <ImageView
+                android:id="@+id/single_forecast_weather_icon_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_vertical_margin"
+                android:src="@drawable/w_12"/>
+
+            <TextView
+                android:id="@+id/single_forecast_weather_temperature_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7^"/>
+
+            <TextView
+                android:id="@+id/single_forecast_weather_pressure_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pressure: 1020mb"/>
+        </LinearLayout>
+
+        <!--
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center"
+            android:padding="@dimen/activity_vertical_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Charts"
+                android:id="@+id/textView"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Button"
+                android:id="@+id/button"
+
+                android:layout_below="@+id/textView"
+                android:layout_toStartOf="@+id/button2"
+                android:layout_alignRight="@+id/button3"
+                android:layout_alignEnd="@+id/button3" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Button"
+                android:id="@+id/button2"
+                android:layout_alignTop="@+id/button3"
+                android:layout_toRightOf="@+id/button3"
+                android:layout_toEndOf="@+id/button3" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Button"
+                android:id="@+id/button3"
+                android:layout_below="@+id/button"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Button"
+                android:id="@+id/button4"
+                android:layout_above="@+id/button2"
+                android:layout_toRightOf="@+id/button"
+                android:layout_toEndOf="@+id/button" />
+
+        </RelativeLayout>
+        -->
+    </LinearLayout>
+</ScrollView>

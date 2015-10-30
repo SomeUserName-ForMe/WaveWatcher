@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Strings related to Settings -->
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <!-- Display Units Settings -->
+    <string name="pref_display_units">Display Units</string>
+    <string name="pref_display_units_summary">Choose which units to display measurements with.</string>
+    <string name="pref_display_units_key">units</string>
+    <string name="pref_display_units_default">eu</string>
+
+    <!-- Location Settings -->
+    <string name="pref_location">Location</string>
+    <string name="pref_location_summary">Select your location.</string>
+    <string name="pref_location_key">spotID</string>
+    <string name="pref_location_default">52</string>
+
+</resources>
